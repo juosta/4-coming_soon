@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <link rel="Stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/png" href="/favicon.png"/>
-    <script src="script.js"></script>
     <title>Coming soon</title>
 </head>
 
@@ -14,31 +14,50 @@
     <main>
         <section class="first_section">
             <header>
-                <img src="/img/Logo.png" alt="Logo">
+                <img class="logo_icon" src="/img/Logo.png" alt="Logo">
                 <h1>COMING SOON</h1>
-                <p>An awesome new company for web recouces is coming very soon.</p>
-                <p>Enter your email to request an early invitation!</p>
+                <p>An awesome new company for web recouces is coming very soon.<br>Enter your email to request an early invitation!</p>
             </header>  
         
         <div>
-            <p id="countdown"></p>
-            <form action="/action_page.php">
-                <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
-                <input type="submit" value="Subscribe Now">
+            
+            <div> 
+                <p class="countdown_time" id="countdown_days"></p>
+                <p class="countdown_time" id="countdown_hours"></p>
+                <p class="countdown_time" id="countdown_minutes"></p>
+                <p class="countdown_time" id="countdown_seconds"></p>
+            </div>
+            <div>
+                <label class="countdown_label" for="countdown_days">DAYS</label>
+                <label class="countdown_label" for="countdown_hours">HOURS</label>
+                <label class="countdown_label" for="countdown_minutes">MINUTES</label>
+                <label class="countdown_label" for="countdown_seconds">SECONDS</label>
+            </div>
+            <div>
+                <form class="first_form" action="/action_page.php">
+                <input class="subscribe_email" type="text" id="email" name="email" placeholder="Type your email"><br><br>
+                <input class="form_buttons" type="submit" value="Subscribe Now">
               </form>
-            <img src="/img/Mouse.png" alt="mouse icon" width="50px">
+            <img class="mouse_img" src="/img/Mouse.png" alt="mouse icon" width="50px">
+            </div>
         </div>
         </section>
 
-        <section>
-            <div>
+        <section class="mid_section">
+            <div class="startup">
                 <h3>ABOUT STARTUP</h3>
                 <p>Matroox material design multi-purpose html template. It comes with huge content and background variants. <strong>Matrox</strong> is coming very soon. We are nearly there.</p>
-                UX DESIGN
-                WEB DESIGN
-                WEB DEVELOPMENT
+                <label for="UX">UX Design</label>
+                <label for="UX">90%</label><br>
+                <progress id="UX" value="90" max="100"> 90% </progress><br>
+                <label for="web_des">Web Design</label>
+                <label for="UX">86%</label><br>
+                <progress id="web_des" value="86" max="100"> 86% </progress><br>
+                <label for="web_dev">Web Development</label>
+                <label for="UX">86%</label><br>
+                <progress id="web_dev" value="86" max="100"> 86% </progress><br>
             </div>
-            <div>
+            <div class="question">
             <h3>HAVE ANY QUESTION?</h3>
             <p>You can use contact form below or contact us via e-mail at: <a href="mailto:trendytheme.net@gmail.com"> trendytheme.net@gmail.com</a>. Contact form is fully working and very easy to customize</p>
             <form action="/action_page.php">
@@ -47,25 +66,23 @@
                 <label for="message">Message</label><br>
                 <textarea id="message" name="message" rows="1" cols="50">
                     </textarea><br>
-                <input type="submit" value="Send message">
+                <input class="form_buttons" type="submit" value="Send Message">
             </form>
             </div>
         </section>
         <footer>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">∧</button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="CSS/arrow.png" alt="arrow" width="15px"></button><br>
             <nav>
-                <a href="#"></a><img alt="facebook" src="/img/facebook.png" height="20px"></a>
-                <a href="#"><img alt="twitter" src="/img/twitter.png" width="20px"></a>     
-                <a href="#"><img alt="round" src="/img/round.png" width="20px"></a>
+                <a href="https://www.facebook.com/"><img alt="facebook" src="/img/facebook.png" height="20px"></a>
+                <a href="https://twitter.com/?lang=en"><img alt="twitter" src="/img/twitter.png" width="20px"></a>     
+                <a href="https://myaccount.google.com"><img alt="round" src="/img/round.png" width="20px"></a>
                 <a href="#"><img alt="t icon" src="/img/t_icon.png" height="20px"></a>
-                <a href="#"><img alt="linkedin" src="/img/linkedin.png" width="20px"></a>
-                <a href="#"><img alt="insta" src="/img/insta.png" width="20px"></a>
+                <a href="https://www.linkedin.com/"><img alt="linkedin" src="/img/linkedin.png" width="20px"></a>
+                <a href="https://www.instagram.com/"><img alt="insta" src="/img/insta.png" width="20px"></a>
                 <a href="#"><img alt="last one" src="/img/last.png" width="20px"></a>
             </nav>
             <img src="/img/matrox.png" alt="Matrox logo">
-            <p>Copyright © 2016 <b>Matrox</b></p>
-            <p>All Rights Reserved</p>
-            <p>Designed by <b>TrendyTheme</b></p>
+            <p>Copyright © 2016 <b>Matrox</b> | All Rights Reserved | Designed by <b>TrendyTheme</b></p>
             <p>Matrox pack includes complete websites not just homepages, it comes with full website demos. Over <b>200+</b> ready html files only for 17$. Purchase <b>Matrox</b> Now!</p>
         </footer>
     </main>
