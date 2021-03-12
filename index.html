@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="Stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" href="/favicon.png"/>
     <title>Coming soon</title>
+    <script src="./script/script.js"></script>
+    <link rel="Stylesheet" type="text/css" href="./css/style.css">
+    <link rel="Stylesheet" type="text/css" href="./css/top-section.css">
+    <link rel="Stylesheet" type="text/css" href="./css/mid-section.css">
+    <link rel="icon" type="image/png" href="./favicon.png"/>
 </head>
 
 <body>
     <main>
+        <div>
         <section class="first_section">
+            <div class="top_background">
             <header>
                 <img class="logo_icon" src="/img/Logo.png" alt="Logo">
                 <h1>Coming soon</h1>
                 <p>An awesome new company for web recouces is coming very soon.<br>Enter your email to request an early invitation!</p>
             </header>  
-        
         <div>
             
             <div> 
@@ -34,13 +37,14 @@
                 <label class="countdown_label" for="countdown_seconds">SECONDS</label>
             </div>
             <div>
-                <form class="first_form" action="/action_page.php">
+                <form class="first_form">
                 <input class="subscribe_email" type="text" id="email" name="email" placeholder="Type your email"><br><br>
                 <input class="form_buttons" type="submit" value="Subscribe Now">
               </form>
             <img class="mouse_img" src="/img/Mouse.png" alt="mouse icon" width="50px">
             </div>
         </div>
+    </div>
         </section>
 
         <section class="mid_section">
@@ -49,18 +53,18 @@
                 <p>Matroox material design multi-purpose html template. It comes with huge content and background variants. <strong>Matrox</strong> is coming very soon. We are nearly there.</p>
                 <label class="text_label" for="UX">UX Design</label>
                 <label class="percent_label" for="UX">90%</label><br>
-                <progress id="UX" value="90" max="100"> 90% </progress><br>
+                <div class="progress"><div id="UX"> 90% </div><br></div>
                 <label class="text_label" for="web_des">Web Design</label>
                 <label class="percent_label" for="UX">86%</label><br>
-                <progress id="web_des" value="86" max="100"> 86% </progress><br>
+                <div class="progress"><div id="web_des"> 86% </div><br></div>
                 <label class="text_label" for="web_dev">Web Development</label>
                 <label class="percent_label" for="UX">86%</label><br>
-                <progress id="web_dev" value="86" max="100"> 86% </progress><br>
+                <div class="progress"><div id="web_dev"> 86% </div><br></div>
             </div>
             <div class="question">
             <h3>Have any question?</h3>
             <p>You can use contact form below or contact us via e-mail at: <a href="mailto:trendytheme.net@gmail.com"> trendytheme.net@gmail.com</a>. Contact form is fully working and very easy to customize</p>
-            <form action="/action_page.php">
+            <form>
                 <input type="text" id="name"name="name" placeholder="Name">
                 <input type="text" id="email" name="email" placeholder="Email"><br><br>
                 <label for="message">Message</label><br>
@@ -71,15 +75,15 @@
             </div>
         </section>
         <footer>
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="CSS/arrow.png" alt="arrow" width="15px"></button><br>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/arrow.png" alt="arrow" width="15px"></button><br>
             <nav>
-                <a href="https://www.facebook.com/"><img alt="facebook" src="/img/facebook.png" height="20px"></a>
-                <a href="https://twitter.com/?lang=en"><img alt="twitter" src="/img/twitter.png" width="20px"></a>     
-                <a href="https://myaccount.google.com"><img alt="round" src="/img/round.png" width="20px"></a>
-                <a href="#"><img alt="t icon" src="/img/t_icon.png" height="20px"></a>
-                <a href="https://www.linkedin.com/"><img alt="linkedin" src="/img/linkedin.png" width="20px"></a>
-                <a href="https://www.instagram.com/"><img alt="insta" src="/img/insta.png" width="20px"></a>
-                <a href="#"><img alt="last one" src="/img/last.png" width="20px"></a>
+                <a href="https://www.facebook.com/"><img alt="facebook" src="./img/facebook.png" height="20px"></a>
+                <a href="https://twitter.com/?lang=en"><img alt="twitter" src="./img/twitter.png" width="20px"></a>     
+                <a href="https://myaccount.google.com"><img alt="round" src="./img/round.png" width="20px"></a>
+                <a href="#"><img alt="t icon" src="./img/t_icon.png" height="20px"></a>
+                <a href="https://www.linkedin.com/"><img alt="linkedin" src="./img/linkedin.png" width="20px"></a>
+                <a href="https://www.instagram.com/"><img alt="insta" src="./img/insta.png" width="20px"></a>
+                <a href="#"><img alt="last one" src="./img/last.png" width="20px"></a>
             </nav>
             <img src="/img/matrox.png" alt="Matrox logo">
             <p>Copyright © 2016 <b>Matrox</b> | All Rights Reserved | Designed by <b>TrendyTheme</b></p>
