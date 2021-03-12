@@ -75,9 +75,9 @@ a{
     right: 0px;
 }
 
-#name, #email {
+#name, #email2 {
     border: none;
-    border-bottom: solid 5px #EEEEEE;
+    border-bottom: solid 3px #EEEEEE;
     width: 45%;
     padding-bottom: 7px;
 }
@@ -86,9 +86,13 @@ a{
 }
 #message{
         border: none;
-        border-bottom: solid 5px #EEEEEE;
+        border-bottom: solid 3px #EEEEEE;
         width: 100%;
         margin-top: 5px;
         padding-bottom: 7px;
         resize: none;
+}
+
+#name:focus, #email:focus, #email2:focus, #message:focus{
+        outline: none;
 }
